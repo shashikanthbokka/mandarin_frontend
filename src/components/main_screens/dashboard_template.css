@@ -1,0 +1,42 @@
+* {
+  padding: 0vw;
+  margin: 0vh;
+}
+.navbar {
+  background-color: var(--thelight1);
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 2.5vw;
+  box-shadow: 1px 1px 10px #888888;
+}
+.profile-pic img {
+  height: 25px;
+  width: 25px;
+  margin: 1.5vh 1.5vw;
+  cursor: pointer;
+}
+.main-part {
+  display: flex;
+  flex-direction: row;
+  height: 92.5vh;
+}
+.grey-part {
+  background-color: var(--thelight1);
+  width: 15vw;
+  height: 78.5vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12.5vh;
+  padding-left: 2.5vw;
+}
+.grey-part-content {
+  color: var(--thegrey1);
+  padding: 2vh 0px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+.grey-part-content:hover {
+  color: var(--thedarkpop);
+  font-weight: 900;
+  padding-left: 0.5rem;
+}

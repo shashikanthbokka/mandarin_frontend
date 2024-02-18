@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  /* --thepop: #fe9503; */
+  --thepop: #f07f3d;
+  --thedarkpop: #ff5b22;
+  --theblack: #000;
+  --thewhite: #ffffff;
+  --thegrey1: #2d3250;
+  --thegrey2: #424769;
+  --thelight1: #fecda6;
+  --thelight2: #ff9130;
+}
+Link {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.dark-mode {
+  --thegrey1: rgb(255, 145, 48);
+  --thegrey2: #fecda6;
+  --thelight1: rgb(45, 50, 80);
+  --thelight2: #424769;
+  --theblack: #ffffff;
+  --thewhite: #000;
+}

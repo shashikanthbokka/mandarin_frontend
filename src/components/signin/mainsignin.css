@@ -1,0 +1,58 @@
+.main-signin {
+  display: flex;
+  margin: 2rem 0 2rem 2rem;
+  height: 70vh;
+  align-items: center;
+  gap: 2rem;
+}
+.main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 45%;
+  margin: 0 0 0 5rem;
+}
+.main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#email-input,
+#password-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+}
+#email-input input,
+#password-input input {
+  width: 100%;
+  border: 2px solid var(--thepop);
+  padding: 1.25rem 5rem 1.25rem 3rem;
+  border-radius: 15px;
+}
+#email-input label,
+#password-input label {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#signin-btn {
+  padding: 1rem 2rem;
+  margin: 1.5rem 1rem;
+  border-radius: 15px;
+  background-color: var(--thegrey1);
+  color: var(--thewhite);
+  border: 2px solid var(--thegrey1);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+}
+#signin-btn:hover {
+  background-color: var(--thewhite);
+  border: 2px dashed var(--thegrey1);
+  color: var(--thegrey1);
+  cursor: pointer;
+}

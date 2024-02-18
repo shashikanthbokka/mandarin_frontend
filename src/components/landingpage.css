@@ -1,0 +1,79 @@
+.lp-screen {
+  height: 100vh;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+.lp-left {
+  padding: 20px;
+  min-width: 50vw;
+  display: grid;
+  grid-template-rows: 1.2fr 0.7fr 1.1fr;
+  row-gap: 2rem;
+}
+.lp-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 20px;
+}
+.logo {
+  text-align: center;
+  color: var(--thegrey1);
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+.logo h1,
+p {
+  margin: 0;
+}
+.logo p {
+  font-size: 16px;
+}
+.lp-signin-btns {
+  display: flex;
+  text-align: center;
+}
+.lp-signin-btn {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  margin: 1rem;
+  color: var(--thegrey1);
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: var(--thewhite);
+  border: 2px solid var(--thepop);
+}
+
+.lp-signin-btn:hover {
+  color: var(--thegrey1);
+  background-color: var(--thepop);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.lp-signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: var(--thegrey1);
+  color: var(--thewhite);
+}
+
+.lp-signup-btn:hover {
+  cursor: pointer;
+  background-color: var(--thewhite);
+  color: var(--thegrey1);
+  transition: 0.2s ease-in-out;
+  border: 2px solid var(--thegrey1);
+}
+.lp-right img {
+  width: 37vw;
+  border-radius: 20px;
+}
