@@ -1,32 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/personal_details.css";
-import { useTheme } from "./ThemeContext";
+import "../HOD/personal_details-hod.js";
+// import { useTheme } from "./ThemeContext";
 
-function PersonalDetails() {
-  const { isDarkMode, toggleMode } = useTheme();
+function PersonalDetailsP() {
+  // const { isDarkMode, toggleMode } = useTheme();
 
   return (
-    <>
+    // <div className={isDarkMode ? "dark-mode" : "light-mode"}>
+    <div>
       <div class="main-part">
         <div class="grey-part">
           <Link to="/">
             <div className="logo-2">Mandarin</div>
           </Link>
           <div>
-            <Link to="/dashboard_template">
+            <Link to="/dashboard_template-p">
               <div class="grey-part-content">DASHBOARD</div>
             </Link>
-            <Link to="/personal_details">
+            <Link to="/personal_details-p">
               <div class="grey-part-content">PERSONAL DETAILS</div>
             </Link>
-            <Link to="/target_updates">
+            <Link to="/target_updates-p">
               <div class="grey-part-content">TARGET UPDATES</div>
             </Link>
-            <Link to="/task_guidelines">
+            <Link to="/task_guidelines-p">
               <div class="grey-part-content">TASK GUIDELINES</div>
             </Link>
-            <Link to="/pms_update">
+            <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
             <div class="grey-part-content">APPEARANCE</div>
@@ -37,7 +38,7 @@ function PersonalDetails() {
           <div className="pd-body">
             <div className="pd-values">
               <div id="pd-1">Full Name :</div>
-              <div className="pd-value">Shashikanth Bokka</div>
+              <div className="pd-value">Sanjay</div>
             </div>
             <div className="pd-values">
               <div id="pd-2">Date of Birth :</div>
@@ -80,8 +81,8 @@ function PersonalDetails() {
           <button id="pd-btn">Edit</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-export default PersonalDetails;
+export default PersonalDetailsP;

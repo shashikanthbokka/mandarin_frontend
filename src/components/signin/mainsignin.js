@@ -24,7 +24,7 @@ function Mainsignin() {
             <button id="signin-btn">Sign In</button>
           </Link>
         </div>
-        <div className="main-right lp-right">
+        <div className="main-right si-right">
           <img src="/assets/lp-img.png" />
         </div>
       </div>

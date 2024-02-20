@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/dashboard_template.css";
+import "../employee/dashboard_template.css";
 import PieChart from "../charts/pie";
 import AreaChart from "../charts/area";
 import ScoreIncreaseChart from "../charts/scores_area";
@@ -40,6 +40,8 @@ function DashboardTemplate() {
                 data={{
                   labels: ["Remaining Scores", "Obtained Scores"],
                   values: [100, 150],
+                  bgclr: ["rgb(254, 205, 166)", "rgb(45, 50, 80)"],
+                  grp: "",
                 }}
               />
             </div>

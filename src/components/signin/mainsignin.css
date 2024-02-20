@@ -56,3 +56,10 @@
   color: var(--thegrey1);
   cursor: pointer;
 }
+.si-right {
+  padding: 5rem 0 0 5rem;
+}
+.si-right img {
+  border-radius: 20px;
+  height: 80vh;
+}

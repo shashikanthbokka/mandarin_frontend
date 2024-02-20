@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/pms_update.css";
+import "../employee/pms_update.css";
 import EditableTableCell from "../fields/editabletablecell";
 import EditableLinkTableCell from "../fields/editablelinktablecell";
 
-function PmsUpdate() {
+function PmsUpdateP() {
   return (
     <>
       <div class="main-part">
@@ -13,19 +13,19 @@ function PmsUpdate() {
             <div className="logo-2">Mandarin</div>
           </Link>
           <div>
-            <Link to="/dashboard_template">
+            <Link to="/dashboard_template-p">
               <div class="grey-part-content">DASHBOARD</div>
             </Link>
-            <Link to="/personal_details">
+            <Link to="/personal_details-p">
               <div class="grey-part-content">PERSONAL DETAILS</div>
             </Link>
-            <Link to="/target_updates">
+            <Link to="/target_updates-p">
               <div class="grey-part-content">TARGET UPDATES</div>
             </Link>
-            <Link to="/task_guidelines">
+            <Link to="/task_guidelines-p">
               <div class="grey-part-content">TASK GUIDELINES</div>
             </Link>
-            <Link to="/pms_update">
+            <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
             <div class="grey-part-content">APPEARANCE</div>
@@ -34,6 +34,19 @@ function PmsUpdate() {
         <div className="white-part">
           <h1 className="top-heading">PMS Update</h1>
 
+          <div className="white-part-middle-hod">
+            <label>Employee Name </label>
+
+            <select required>
+              <option> Uday Kiran</option>
+              <option> Srilakshmi</option>
+              <option>Srihari</option>
+              <option>Hustan Bhagat</option>
+              <option>Gulab Shah</option>
+              <option>Lavanya</option>
+              <option>Priyanka</option>
+            </select>
+          </div>
           <div className="white-part-middle">
             <button className="wpm-btn">Edit</button>
             <button className="wpm-btn">Save</button>
@@ -310,4 +323,4 @@ function PmsUpdate() {
     </>
   );
 }
-export default PmsUpdate;
+export default PmsUpdateP;

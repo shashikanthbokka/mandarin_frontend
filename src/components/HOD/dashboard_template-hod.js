@@ -44,6 +44,8 @@ function DashboardTemplateHOD() {
                 data={{
                   labels: ["Remaining Scores", "Obtained Scores"],
                   values: [100, 150],
+                  bgclr: ["rgb(254, 205, 166)", "rgb(45, 50, 80)"],
+                  grp: "Branch",
                 }}
               />
             </div>

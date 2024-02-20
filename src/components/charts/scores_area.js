@@ -23,7 +23,7 @@ const ScoreIncreaseChart = () => {
         label: "Score Increase",
         data: [0, 10, 15, 25, 40, 50, 55, 55, 75, 90, 92.5, 95], // Sample scores for the last six months
         fill: true,
-        borderColor: "rgb(255, 91, 34)",
+        borderColor: "rgb(45, 50, 80)",
         tension: 0.4,
       },
     ],

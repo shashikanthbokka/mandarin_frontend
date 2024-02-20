@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/pms_update.css";
+import "../employee/pms_update.css";
 import EditableTableCell from "../fields/editabletablecell";
 import EditableLinkTableCell from "../fields/editablelinktablecell";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/task_guidelines.css";
+import "../employee/task_guidelines.css";
 
 function TaskGuidelines() {
   return (

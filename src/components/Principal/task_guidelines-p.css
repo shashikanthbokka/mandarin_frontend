@@ -1,0 +1,10 @@
+#tg-table {
+  margin: 5rem 3rem;
+}
+.tg-link-hod {
+  color: var(--thegrey1);
+  transition: 0.2s ease-in-out;
+}
+.tg-link-hod:hover {
+  padding-left: 1.5rem;
+}

@@ -1,29 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../main_screens/guidelines_template.css";
+import "../HOD/guidelines_template-hod.css";
 
-function GuidelinesTemplate() {
+function GuidelinesTemplateP() {
   return (
     <>
+      {/* <div class="navbar"></div> */}
       <div class="main-part">
         <div class="grey-part">
           <Link to="/">
             <div className="logo-2">Mandarin</div>
           </Link>
           <div>
-            <Link to="/dashboard_template">
+            <Link to="/dashboard_template-p">
               <div class="grey-part-content">DASHBOARD</div>
             </Link>
-            <Link to="/personal_details">
+            <Link to="/personal_details-p">
               <div class="grey-part-content">PERSONAL DETAILS</div>
             </Link>
-            <Link to="/target_updates">
+            <Link to="/target_updates-p">
               <div class="grey-part-content">TARGET UPDATES</div>
             </Link>
-            <Link to="/task_guidelines">
+            <Link to="/task_guidelines-p">
               <div class="grey-part-content">TASK GUIDELINES</div>
             </Link>
-            <Link to="/pms_update">
+            <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
             <div class="grey-part-content">APPEARANCE</div>
@@ -115,4 +116,4 @@ function GuidelinesTemplate() {
   );
 }
 
-export default GuidelinesTemplate;
+export default GuidelinesTemplateP;

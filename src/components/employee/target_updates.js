@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../employee/dashboard_template.css";
-import "../HOD/target_updates-hod.css";
+import "../employee/target_updates.css";
 
-function TargetUpdatesHOD() {
+function TargetUpdates() {
   return (
     <>
       {/* <div class="navbar">
@@ -17,19 +17,19 @@ function TargetUpdatesHOD() {
             <div className="logo-2">Mandarin</div>
           </Link>
           <div>
-            <Link to="/dashboard_template-hod">
+            <Link to="/dashboard_template">
               <div class="grey-part-content">DASHBOARD</div>
             </Link>
-            <Link to="/personal_details-hod">
+            <Link to="/personal_details">
               <div class="grey-part-content">PERSONAL DETAILS</div>
             </Link>
-            <Link to="/target_updates-hod">
+            <Link to="/target_updates">
               <div class="grey-part-content">TARGET UPDATES</div>
             </Link>
-            <Link to="/task_guidelines-hod">
+            <Link to="/task_guidelines">
               <div class="grey-part-content">TASK GUIDELINES</div>
             </Link>
-            <Link to="/pms_update-hod">
+            <Link to="/pms_update">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
             <div class="grey-part-content">APPEARANCE</div>
@@ -38,21 +38,25 @@ function TargetUpdatesHOD() {
         <div className="white-part">
           <h1 className="top-heading">Target Update</h1>
 
-          <div className="white-part-up">
-            <div className="white-part-content-hod">
+          <div className="white-part-up1">
+            <div className="white-part-content">
               <b>Name</b>
               <p>Shashikanth Bokka</p>
             </div>
-            <div className="white-part-content-hod">
+            <div className="white-part-content">
+              <b>EMP ID</b>
+              <p>20211A6612</p>
+            </div>
+            <div className="white-part-content">
               <b>Designation</b>
               <p>Head of the Department</p>
             </div>
-            <div className="white-part-content-hod">
+            <div className="white-part-content">
               <b>Department</b>
               <p>Computer Science and Engineering (AI & ML)</p>
             </div>
           </div>
-          <div className="white-part-middle-hod">
+          {/* <div className="white-part-middle-hod">
             <label>Employee Name </label>
 
             <select required>
@@ -64,7 +68,7 @@ function TargetUpdatesHOD() {
               <option>Lavanya</option>
               <option>Priyanka</option>
             </select>
-          </div>
+          </div> */}
           <div className="white-part-down">
             <table>
               {/* <caption>Front-end web developer course 2021</caption> */}
@@ -332,4 +336,4 @@ function TargetUpdatesHOD() {
   );
 }
 
-export default TargetUpdatesHOD;
+export default TargetUpdates;
