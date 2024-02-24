@@ -147,9 +147,10 @@ function Empsignup() {
           {/* <button id="emp-signup-btn"> */}
 
           <Link to="/">
-            <button id="emp-signup-btn" onClick={addEmpInfo}>
+            {/* <button id="emp-signup-btn" onClick={addEmpInfo}>
               submit
-            </button>
+            </button> */}
+            <button id="emp-signup-btn">submit</button>
           </Link>
         </div>
       </div>

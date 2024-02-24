@@ -30,7 +30,7 @@ function PersonalDetailsP() {
             <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part-1">
@@ -38,7 +38,7 @@ function PersonalDetailsP() {
           <div className="pd-body">
             <div className="pd-values">
               <div id="pd-1">Full Name :</div>
-              <div className="pd-value">Sanjay</div>
+              <div className="pd-value">Sanjay Dubey</div>
             </div>
             <div className="pd-values">
               <div id="pd-2">Date of Birth :</div>
@@ -51,7 +51,7 @@ function PersonalDetailsP() {
             <div className="pd-values">
               <div id="pd-4">Department :</div>
               <div className="pd-value">
-                Computer Science and Engineering (AI&ML)
+                Artificial Intelligence and Data Science
               </div>
             </div>
             <div className="pd-values">
@@ -75,7 +75,7 @@ function PersonalDetailsP() {
             </div>
             <div className="pd-values">
               <div id="pd-9">Personal Email :</div>
-              <div className="pd-value">shashikanthb13@gmail.com</div>
+              <div className="pd-value">niladri.dey@bvrit.ac.in</div>
             </div>
           </div>
           <button id="pd-btn">Edit</button>

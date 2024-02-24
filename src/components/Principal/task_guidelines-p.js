@@ -31,7 +31,7 @@ function TaskGuidelinesP() {
             <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part">
@@ -53,7 +53,7 @@ function TaskGuidelinesP() {
                   Teaching & Learning (60 marks )
                 </th>
                 <td>
-                  <Link to="/guidelines_template-hod" className="tg-link-hod">
+                  <Link to="/guidelines_template-p" className="tg-link-hod">
                     1.1: New course design/Lab Experiments
                   </Link>
                 </td>

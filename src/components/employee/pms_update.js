@@ -28,7 +28,7 @@ function PmsUpdate() {
             <Link to="/pms_update">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div className="white-part">

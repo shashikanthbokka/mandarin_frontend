@@ -40,3 +40,17 @@
   font-weight: 900;
   padding-left: 0.5rem;
 }
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#dt-pending {
+  margin-top: 2rem;
+  padding-right: 10rem;
+}
+/* .dt-pending-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+} */

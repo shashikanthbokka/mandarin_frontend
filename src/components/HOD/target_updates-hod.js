@@ -4,6 +4,18 @@ import "../employee/dashboard_template.css";
 import "../HOD/target_updates-hod.css";
 
 function TargetUpdatesHOD() {
+  const options = [
+    "Uday Kiran Goru",
+    "Srilakshmi V",
+    "Srihari Pasala",
+    "Hutashah Vishal Bhagat",
+    "Gulab Shah",
+    "Lavanya B",
+    "Priyanka B",
+  ];
+  const sortedOptions = options.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
   return (
     <>
       {/* <div class="navbar">
@@ -32,7 +44,7 @@ function TargetUpdatesHOD() {
             <Link to="/pms_update-hod">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div className="white-part">
@@ -41,7 +53,7 @@ function TargetUpdatesHOD() {
           <div className="white-part-up">
             <div className="white-part-content-hod">
               <b>Name</b>
-              <p>Shashikanth Bokka</p>
+              <p>Uday Kiran Goru</p>
             </div>
             <div className="white-part-content-hod">
               <b>Designation</b>
@@ -55,14 +67,19 @@ function TargetUpdatesHOD() {
           <div className="white-part-middle-hod">
             <label>Employee Name </label>
 
-            <select required>
-              <option> Uday Kiran</option>
-              <option> Srilakshmi</option>
-              <option>Srihari</option>
-              <option>Hustan Bhagat</option>
+            {/* <select required>
+              <option> Uday Kiran Goru</option>
+              <option> Srilakshmi V</option>
+              <option>Srihari Pasala</option>
+              <option>Hutashah Vishal Bhagat</option>
               <option>Gulab Shah</option>
-              <option>Lavanya</option>
-              <option>Priyanka</option>
+              <option>Lavanya B</option>
+              <option>Priyanka B</option>
+            </select> */}
+            <select defaultValue="Uday Kiran Goru" required>
+              {sortedOptions.map((option, index) => (
+                <option key={index}>{option}</option>
+              ))}
             </select>
           </div>
           <div className="white-part-down">

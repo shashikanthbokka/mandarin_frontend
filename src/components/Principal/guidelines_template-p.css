@@ -112,3 +112,37 @@ textarea {
   max-height: 10vh;
   max-width: 25vw;
 }
+
+/* response */
+.Gpt {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.chat-response {
+  display: flex;
+  justify-content: center;
+}
+
+.chat-bubble {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px 3rem;
+  margin-top: 20px;
+  max-width: 70%;
+  animation: slideIn 0.5s ease-in-out forwards;
+  text-align: left;
+  line-height: 2rem;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* response */

@@ -32,7 +32,7 @@ function DashboardTemplateHOD() {
             <Link to="/pms_update-hod">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part">
@@ -43,7 +43,7 @@ function DashboardTemplateHOD() {
               <PieChart
                 data={{
                   labels: ["Remaining Scores", "Obtained Scores"],
-                  values: [100, 150],
+                  values: [550, 700],
                   bgclr: ["rgb(254, 205, 166)", "rgb(45, 50, 80)"],
                   grp: "Branch",
                 }}
@@ -55,6 +55,27 @@ function DashboardTemplateHOD() {
           </div>
 
           <div className="areas-hod">
+            <div className="faculty-performances">
+              <label>Faculty Statistics</label>
+              <div className="faculty-performance">
+                <b>
+                  <p>Best Performer :</p>
+                </b>
+                <p>Srilakshmi V</p>
+              </div>
+              <div className="faculty-performance">
+                <b>
+                  <p>Slow Performer :</p>
+                </b>
+                <p>Shashikanth Bokka</p>
+              </div>
+              <div className="faculty-performance">
+                <b>
+                  <p>Slow Performing Criteria :</p>
+                </b>
+                <p>Total Completed Scores</p>
+              </div>
+            </div>
             <div className="area-hod">
               <label>Teaching and Learning</label>
 

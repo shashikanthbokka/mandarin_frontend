@@ -13,7 +13,9 @@
 }
 .lp-right {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   justify-content: center;
   margin: 0 0 0 20px;
 }
@@ -78,4 +80,14 @@ p {
 .lp-right img {
   width: 37vw;
   border-radius: 20px;
+}
+.lp-names {
+  border: 2px solid var(--thegrey1);
+  padding: 1rem 9rem;
+  border-radius: 20px;
+  margin: 1rem;
+  display: flex;
+}
+.lp-names h3 {
+  padding: 1rem;
 }

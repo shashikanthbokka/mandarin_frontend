@@ -31,7 +31,7 @@ function TaskGuidelinesHOD() {
             <Link to="/pms_update-hod">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part">

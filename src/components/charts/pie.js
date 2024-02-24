@@ -37,7 +37,7 @@ const PieChart = ({ data }) => {
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        hoverOffset: 10,
+        hoverOffset: 12,
 
         // Other chart options can be customized here
       },

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../fields/editablelinktablecell.css";
 
 const EditableLinkTableCell = () => {
   const [inputValue, setInputValue] = useState("");
@@ -24,6 +25,7 @@ const EditableLinkTableCell = () => {
         value={inputValue}
         onChange={handleInputChange}
         onBlur={convertToLink}
+        className="pms-link"
       />
       {linkContent}
     </td>

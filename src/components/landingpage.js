@@ -32,6 +32,14 @@ function Landingpage() {
       </div>
       <div className="lp-right">
         <img src="/assets/lp-img.png" />
+        <div className="lp-names">
+          <h3>Developed by :</h3>
+          <div>
+            <p>Niladri Sekhar Dey</p>
+            <p>Uday Kiran Goru</p>
+            <p>Shashikanth Bokka</p>
+          </div>
+        </div>
       </div>
     </div>
   );

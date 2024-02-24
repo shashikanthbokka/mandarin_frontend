@@ -30,7 +30,7 @@ function PersonalDetailsHOD() {
             <Link to="/pms_update-hod">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part-1">
@@ -38,7 +38,7 @@ function PersonalDetailsHOD() {
           <div className="pd-body">
             <div className="pd-values">
               <div id="pd-1">Full Name :</div>
-              <div className="pd-value">Shashikanth Bokka</div>
+              <div className="pd-value">Uday Kiran Goru</div>
             </div>
             <div className="pd-values">
               <div id="pd-2">Date of Birth :</div>
@@ -75,7 +75,7 @@ function PersonalDetailsHOD() {
             </div>
             <div className="pd-values">
               <div id="pd-9">Personal Email :</div>
-              <div className="pd-value">shashikanthb13@gmail.com</div>
+              <div className="pd-value">udaykiran.g@bvrit.ac.in</div>
             </div>
           </div>
           <button id="pd-btn">Edit</button>

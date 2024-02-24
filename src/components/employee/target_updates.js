@@ -32,7 +32,7 @@ function TargetUpdates() {
             <Link to="/pms_update">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div className="white-part">
@@ -49,7 +49,7 @@ function TargetUpdates() {
             </div>
             <div className="white-part-content">
               <b>Designation</b>
-              <p>Head of the Department</p>
+              <p>Assistant Professor</p>
             </div>
             <div className="white-part-content">
               <b>Department</b>

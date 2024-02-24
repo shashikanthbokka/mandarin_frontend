@@ -33,7 +33,7 @@ function DashboardTemplateP() {
             <Link to="/pms_update-p">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part">
@@ -57,18 +57,20 @@ function DashboardTemplateP() {
                     "CSBS",
                     "AIDS",
                   ],
-                  values: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+                  values: [
+                    1250, 1250, 1250, 1250, 1250, 1250, 1000, 1000, 1000, 1000,
+                  ],
                   bgclr: [
-                    "rgb(118, 69, 59,0.8)",
-                    "rgba(75, 192, 192,0.8)",
-                    "rgba(153, 102, 255,0.8)",
-                    "rgb(247, 39, 152,0.8)",
-                    "rgb(167, 209, 41,0.8)",
-                    "rgb(8, 2, 163,0.8)",
-                    "rgb(255, 237, 0,0.8)",
-                    "rgb(255, 23, 0,0.8)",
-                    "rgb(48, 77, 48,0.8)",
-                    "rgb(252, 103, 54,0.8)",
+                    "rgb(118, 69, 59)",
+                    "rgba(75, 192, 192)",
+                    "rgba(153, 102, 255)",
+                    "rgb(247, 39, 152)",
+                    "rgb(167, 209, 41)",
+                    "rgb(8, 2, 163)",
+                    "rgb(255, 237, 0)",
+                    "rgb(255, 23, 0)",
+                    "rgb(48, 77, 48)",
+                    "rgb(252, 103, 54)",
                   ],
                   grp: "Branches",
                 }}

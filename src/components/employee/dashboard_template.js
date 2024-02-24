@@ -4,6 +4,7 @@ import "../employee/dashboard_template.css";
 import PieChart from "../charts/pie";
 import AreaChart from "../charts/area";
 import ScoreIncreaseChart from "../charts/scores_area";
+import ProgressBar from "../charts/percentage";
 
 function DashboardTemplate() {
   return (
@@ -29,11 +30,24 @@ function DashboardTemplate() {
             <Link to="/pms_update">
               <div class="grey-part-content">PMS UPDATE</div>
             </Link>
-            <div class="grey-part-content">APPEARANCE</div>
+            {/* <div class="grey-part-content">APPEARANCE</div> */}
           </div>
         </div>
         <div class="white-part">
-          <h1 className="top-heading">Dashboard</h1>
+          <div className="top-section">
+            <h1 className="top-heading">Dashboard</h1>
+            <div id="dt-pending">
+              <div className="dt-pending-item">
+                {/* <p>Profile Completion</p> */}
+                <ProgressBar percentage={78} label="Profile Completion" />
+              </div>
+              <div className="dt-pending-item">
+                {/* <p>Proof Uploading</p> */}
+                <ProgressBar percentage={45} label="Proof Uploading" />
+              </div>
+              <div className="dt-pending-item">Days Remaining : 145</div>
+            </div>
+          </div>
           <div className="dt-top">
             <div className="pie-hod">
               <PieChart
@@ -57,8 +71,8 @@ function DashboardTemplate() {
               <AreaChart
                 data={{
                   labels: ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"],
-                  total: [10, 5, 8, 7, 10, 10],
-                  completed: [10, 0, 0, 7, 10, 10],
+                  total: [5, 6, 16, 12, 15, 6],
+                  completed: [5, 5, 13, 7, 10, 4],
                 }}
               />
             </div>
@@ -68,8 +82,8 @@ function DashboardTemplate() {
               <AreaChart
                 data={{
                   labels: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"],
-                  total: [50, 70, 90, 80, 100, 120],
-                  completed: [20, 40, 60, 70, 80, 100],
+                  total: [15, 5, 15, 5, 5, 5],
+                  completed: [14, 4, 13, 4, 4, 5],
                 }}
               />
             </div>
@@ -88,8 +102,8 @@ function DashboardTemplate() {
                     "3.7",
                     "3.8",
                   ],
-                  total: [50, 70, 90, 80, 100, 120, 140, 140],
-                  completed: [20, 40, 60, 70, 80, 100, 120, 120],
+                  total: [15, 10, 10, 10, 3, 4, 5, 3],
+                  completed: [14, 9, 8, 7, 2, 4, 4, 1],
                 }}
               />
             </div>
@@ -99,8 +113,8 @@ function DashboardTemplate() {
               <AreaChart
                 data={{
                   labels: ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6"],
-                  total: [50, 70, 90, 80, 100, 120],
-                  completed: [20, 40, 60, 70, 80, 100],
+                  total: [10, 8, 6, 6, 5, 5],
+                  completed: [9, 5, 6, 4, 5, 5],
                 }}
               />
             </div>
@@ -110,8 +124,8 @@ function DashboardTemplate() {
               <AreaChart
                 data={{
                   labels: ["5.1", "5.2", "5.3", "5.4", "5.5"],
-                  total: [50, 70, 90, 80, 100],
-                  completed: [20, 40, 60, 70, 80],
+                  total: [10, 5, 8, 7, 10],
+                  completed: [10, 4, 6, 7, 8],
                 }}
               />
             </div>
