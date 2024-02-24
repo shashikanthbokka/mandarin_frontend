@@ -17,24 +17,193 @@ function Empsignup() {
   const navigate = useNavigate();
 
   const addEmpInfo = async () => {
-    let formField = new FormData();
+    const employeeData = {
+      name: name,
+      emp_id: emp_id,
+      department: department,
+      designation: designation,
+      phone_no: phone_no,
+      email: email,
+      password: password,
+      curriculum: {
+        "Teaching & Learning": {
+          1: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          2: {
+            max_marks: "6",
+            my_target: "",
+            acheived_score: "",
+          },
+          3: {
+            max_marks: "16",
+            my_target: "",
+            acheived_score: "",
+          },
+          4: {
+            max_marks: "12",
+            my_target: "",
+            acheived_score: "",
+          },
+          5: {
+            max_marks: "15",
+            my_target: "",
+            acheived_score: "",
+          },
+          6: {
+            max_marks: "6",
+            my_target: "",
+            acheived_score: "",
+          },
+        },
+        "Research & Consultancy": {
+          1: {
+            max_marks: "15",
+            my_target: "",
+            acheived_score: "",
+          },
+          2: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          3: {
+            max_marks: "15",
+            my_target: "",
+            acheived_score: "",
+          },
+          4: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          5: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          6: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+        },
+        "Professional Development": {
+          1: {
+            max_marks: "15",
+            my_target: "",
+            acheived_score: "",
+          },
+          2: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+          3: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+          4: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+          5: {
+            max_marks: "3",
+            my_target: "",
+            acheived_score: "",
+          },
+          6: {
+            max_marks: "4",
+            my_target: "",
+            acheived_score: "",
+          },
+          7: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          8: {
+            max_marks: "3",
+            my_target: "",
+            acheived_score: "",
+          },
+        },
+        "Student Development": {
+          1: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+          2: {
+            max_marks: "8",
+            my_target: "",
+            acheived_score: "",
+          },
+          3: {
+            max_marks: "6",
+            my_target: "",
+            acheived_score: "",
+          },
+          4: {
+            max_marks: "6",
+            my_target: "",
+            acheived_score: "",
+          },
+          5: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          6: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+        },
+        "Institutional Development": {
+          1: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+          2: {
+            max_marks: "5",
+            my_target: "",
+            acheived_score: "",
+          },
+          3: {
+            max_marks: "8",
+            my_target: "",
+            acheived_score: "",
+          },
+          4: {
+            max_marks: "7",
+            my_target: "",
+            acheived_score: "",
+          },
+          5: {
+            max_marks: "10",
+            my_target: "",
+            acheived_score: "",
+          },
+        },
+      }, // You might want to include the password if needed
+    };
 
-    formField.append("name", name);
-    formField.append("emp_id", emp_id);
-    formField.append("department", department);
-    formField.append("designation", designation);
-    formField.append("phone_no", phone_no);
-    formField.append("email", email);
-    // formField.append("password", password);
-
-    await axios({
-      method: "post",
-      url: "http://127.0.0.1:8000/api/route/",
-      data: formField,
-    }).then((res) => {
-      console.log(res.data);
-      navigate("/");
-    });
+    await axios
+      .post("http://127.0.0.1:8000/signup/", employeeData)
+      .then((res) => {
+        console.log(res.data);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("Error adding employee info:", error);
+      });
+    console.log(employeeData);
   };
 
   return (
@@ -147,10 +316,10 @@ function Empsignup() {
           {/* <button id="emp-signup-btn"> */}
 
           <Link to="/">
-            {/* <button id="emp-signup-btn" onClick={addEmpInfo}>
+            <button id="emp-signup-btn" onClick={addEmpInfo}>
               submit
-            </button> */}
-            <button id="emp-signup-btn">submit</button>
+            </button>
+            {/* <button id="emp-signup-btn">submit</button> */}
           </Link>
         </div>
       </div>

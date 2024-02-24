@@ -1,12 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../employee/dashboard_template.css";
 import PieChart from "../charts/pie";
 import AreaChart from "../charts/area";
 import ScoreIncreaseChart from "../charts/scores_area";
 import ProgressBar from "../charts/percentage";
+import { getdata, setdata } from "../../data";
+import axios from "axios";
 
 function DashboardTemplate() {
+  // gpt
+  // let eid = 0;
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     eid = getdata();
+  //     console.log(eid);
+  //     // do something 1 sec after clicked has changed
+  //   }, 500);
+  // }, []);
+  // gpt
+  const [target, setTarget] = useState("");
+  const getDetails = async () => {
+    const employeeData = {
+      eid: localStorage.getItem("eid"), // You might want to include the password if needed
+    };
+    console.log(employeeData);
+    await axios
+      .post("http://127.0.0.1:8000/get_total_achieved_score/", employeeData)
+      .then((res) => {
+        setTarget(res.data.total_score);
+        console.log(target);
+      })
+      .catch((error) => {
+        console.error("Error adding employee info:", error);
+      });
+  };
+  // console.log(total_score);
   return (
     <>
       <div class="main-part">
@@ -53,7 +82,7 @@ function DashboardTemplate() {
               <PieChart
                 data={{
                   labels: ["Remaining Scores", "Obtained Scores"],
-                  values: [100, 150],
+                  values: [250 - target, target],
                   bgclr: ["rgb(254, 205, 166)", "rgb(45, 50, 80)"],
                   grp: "",
                 }}

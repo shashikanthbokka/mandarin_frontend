@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "../signin/mainsignin.css";
 import "../empsignup.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { setdata } from "../../data";
 
 function Principal() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  // const [responseData, setResponseData] = useState(null);
+  // let responseData = "";
+
+  // const navigate = useNavigate();
+
+  const loginPrincipal = async () => {
+    const employeeData = {
+      email: email,
+      password: password, // You might want to include the password if needed
+    };
+
+    await axios
+      .post("http://127.0.0.1:8000/login/", employeeData)
+      .then((res) => {
+        console.log(res.data);
+        // responseData = res.data.empid;
+        setdata(res.data.empid);
+        // navigate("/");
+      })
+      .catch((error) => {
+        console.error("Error adding employee info:", error);
+      });
+    console.log(employeeData);
+  };
   return (
     <>
       <Link to="/">
@@ -14,14 +42,24 @@ function Principal() {
         <div className="main-left">
           <div id="email-input">
             <label>Login email </label>
-            <input type="email" placeholder="enter your email..." />
+            <input
+              type="email"
+              placeholder="enter your email..."
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div id="password-input">
             <label>Password </label>
-            <input type="password" placeholder="enter your password..." />
+            <input
+              type="password"
+              placeholder="enter your password..."
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
           <Link to="/dashboard_template-p">
-            <button id="signin-btn">Sign In</button>
+            <button id="signin-btn" onClick={loginPrincipal}>
+              Sign In
+            </button>
           </Link>
         </div>
         <div className="main-right si-right">
